@@ -4,16 +4,17 @@ lista = [0, 0, 0, 0]
 
 while True:
 
-    opção = input("O curso e de 1, 2, 3 ou 4 bimestres? ")
+    opção = input("O curso e de 1, 2, 3 ou 4 bimestres? ") 
+    """Serve para o usuário escolher quantos bimestres ele quer calcular a média, e o programa vai se adaptar a quantidade de bimestres escolhida."""
 
     if opção == "1":
 
         Nota_primeiro = float(input("nota 1bim: "))
-        peso_primeiro = float(input("peso do 1bim: "))
-        lista[0] = Nota_primeiro * peso_primeiro
+        peso_primeiro = float(input("peso do 1bim: ")) 
+        lista[0] = Nota_primeiro * peso_primeiro #Ele pega a nota e multiplica pelo peso, e coloca na lista na posição 0
         Media_Total = sum(lista) / peso_primeiro
 
-        system = os.system("cls")
+        system = os.system("cls") #Serve para limpar a tela do terminal
         print("nota 1bim: ", Nota_primeiro)
         print(f"media: {Media_Total:.2f}")
 
@@ -23,11 +24,11 @@ while True:
 
         Nota_primeiro = float(input("nota 1bim: "))
         peso_primeiro = float(input("peso do 1bim: "))
-        lista[0] = Nota_primeiro * peso_primeiro
+        lista[0] = Nota_primeiro * peso_primeiro 
 
         Nota_segundo = float(input("nota 2bim: "))
         peso_segundo = float(input("peso do 2bim: "))
-        lista[1] = Nota_segundo * peso_segundo
+        lista[1] = Nota_segundo * peso_segundo #Ele pega a nota e multiplica pelo peso, e coloca na lista na posição 1
 
         Media_Total = sum(lista) / (peso_primeiro + peso_segundo)
 
@@ -42,19 +43,19 @@ while True:
 
         Nota_primeiro = float(input("nota 1bim: "))
         peso_primeiro = float(input("peso do 1bim: "))
-        lista[0] = Nota_primeiro * peso_primeiro
+        lista[0] = Nota_primeiro * peso_primeiro 
 
         Nota_segundo = float(input("nota 2bim: "))
         peso_segundo = float(input("peso do 2bim: "))
-        lista[1] = Nota_segundo * peso_segundo
+        lista[1] = Nota_segundo * peso_segundo 
 
         Nota_terceiro = float(input("nota 3bim: "))
         peso_terceiro = float(input("peso do 3bim: "))
-        lista[2] = Nota_terceiro * peso_terceiro
+        lista[2] = Nota_terceiro * peso_terceiro #Ele pega a nota e multiplica pelo peso, e coloca na lista na posição 2
 
         Media_Total = sum(lista) / (peso_primeiro + peso_segundo + peso_terceiro)
 
-        system = os.system("cls")
+        system = os.system("cls") 
 
         print("nota 1bim: ", Nota_primeiro)
         print("nota 2bim: ", Nota_segundo)
@@ -79,9 +80,11 @@ while True:
 
         Nota_quarto = float(input("nota 4bim: "))
         peso_quarto = float(input("peso do 4bim: "))
-        lista[3] = Nota_quarto * peso_quarto
+        lista[3] = Nota_quarto * peso_quarto #Ele pega a nota e multiplica pelo peso, e coloca na lista na posição 3
 
         Media_Total = sum(lista) / (peso_primeiro + peso_segundo + peso_terceiro + peso_quarto)
+        """Ele pega a soma de todas as notas multiplicadas pelos pesos e divide pela soma dos pesos, para calcular a média final.
+        Usando Listas para organizar as notas e pesos, e o método sum() para somar os valores da lista. """
 
         system = os.system("cls")
         print("nota 1bim: ", Nota_primeiro)
@@ -89,5 +92,5 @@ while True:
         print("nota 3bim: ", Nota_terceiro)
         print("nota 4bim: ", Nota_quarto)
         print(f"media: {Media_Total:.2f}")
-
-        break
+        #No final do código, ele limpa a tela e mostra as notas e a média final com duas casas decimais.
+        break #Serve para sair do loop while, e finalizar o programa.
