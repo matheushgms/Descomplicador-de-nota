@@ -1,0 +1,19 @@
+import os
+
+Nota_primeiro = float(input("nota 1bim: "))
+Nota_segundo = float(input("nota 2bim: "))
+Nota_segundo = Nota_segundo * 2
+Nota_terceiro = float(input("nota 3bim: "))
+Nota_terceiro = Nota_terceiro * 2
+Nota_quarto = float(input("nota 4bim: "))
+Nota_quarto = Nota_quarto * 3
+Media_Total = (Nota_primeiro + Nota_segundo + Nota_terceiro + Nota_quarto) / 4
+# Pega as informações das notas e aplica os pesos de cada bimestre. Junta todas as notas e divide por quatro para achar a media total do aluno
+
+system = os.system("cls")
+print("nota 1bim: ", Nota_primeiro)
+print("nota 2bim: ", Nota_segundo)
+print("nota 3bim: ", Nota_terceiro)
+print("nota 4bim: ", Nota_quarto)
+print("media: ", Media_Total)
+# Mostra as notas e a media total do aluno
